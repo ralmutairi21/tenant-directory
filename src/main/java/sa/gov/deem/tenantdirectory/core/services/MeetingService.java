@@ -24,7 +24,7 @@ public class MeetingService {
         return createOnlineMeetingLink(payload, tenant, ldapId);
     }
 
-    public String createOnlineMeetingLink(Object payload, Tenant tenant, UUID ldapId) {
+    private String createOnlineMeetingLink(Object payload, Tenant tenant, UUID ldapId) {
         return webClient.post()
                 .uri("/api/v1/integration/create-meeting")
                 .contentType(MediaType.APPLICATION_JSON)

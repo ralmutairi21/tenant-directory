@@ -19,9 +19,9 @@ public class MeetingService {
     private final TenantRepository tenantRepository;
     private final WebClient webClient;
 
-    public void createMeeting(Object payload, String tenantDomain, UUID ldapId) {
+    public String createMeeting(Object payload, String tenantDomain, UUID ldapId) {
         var tenant = tenantRepository.findTenantByDomainOrAccountId(tenantDomain, null).orElseThrow();
-        createOnlineMeetingLink(payload, tenant, ldapId);
+        return createOnlineMeetingLink(payload, tenant, ldapId);
     }
 
     public String createOnlineMeetingLink(Object payload, Tenant tenant, UUID ldapId) {

@@ -6,7 +6,7 @@ import org.springframework.ldap.odm.annotations.Entry;
 import org.springframework.ldap.odm.annotations.Id;
 
 import javax.naming.Name;
-@Entry(objectClasses = {"mailPerson"}, base = "ou=domain,o=deem-mail")
+@Entry(objectClasses = {"mailPerson"})
 @Data
 public class User {
     @Id

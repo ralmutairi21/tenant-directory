@@ -32,7 +32,6 @@
         <org.apache.commons.lang.version>3.19.0</org.apache.commons.lang.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <mapstruct.version>1.6.3</mapstruct.version>
-        <org.projectlombok.version>1.18.36</org.projectlombok.version>
         <org.mokito-core.version>5.11.0</org.mokito-core.version>
 
     </properties>
@@ -83,7 +82,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${org.projectlombok.version}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
